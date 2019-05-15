@@ -23,7 +23,7 @@ public class Broker {
     }
     
     public void undoOrder(Order order){
-        orderList.remove(order);
+        orderList.add(order);
         order.undo();
     }
 }
